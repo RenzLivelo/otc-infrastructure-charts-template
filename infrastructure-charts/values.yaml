@@ -24,14 +24,12 @@ charts:
     path: "local-charts/kumoops-admin-dashboard"
     # values files needs to be inside this chart
     valueFile: "value-files/admin-dashboard/values.yaml"
-
   kafka:
     namespace: kafka
     targetRevision: 22.2.0-bitnamilegacy
     valueFile: "value-files/kafka/values.yaml"
     parameters:
       "kafka.replicaCount": "1"
-
   elastic-operator:
     namespace: monitoring
     targetRevision: 9.0.5-bitnamilegacy
